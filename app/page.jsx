@@ -1,4 +1,6 @@
 import { AppSidebar } from "@/components/app-sidebar"
+import Cards from "@/components/cards"
+import { CardCharts } from "@/components/bar-chart"
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -39,12 +41,15 @@ export default function Page() {
           </div>
         </header>
         <div className="flex flex-1 flex-col gap-4 p-4 pt-0">
-          <div className="grid auto-rows-min gap-4 md:grid-cols-3">
-            <div className="aspect-video rounded-xl bg-muted/50" />
-            <div className="aspect-video rounded-xl bg-muted/50" />
-            <div className="aspect-video rounded-xl bg-muted/50" />
-          </div>
-          <div className="min-h-[100vh] flex-1 rounded-xl bg-muted/50 md:min-h-min" />
+
+        <div className="grid xl:grid-cols-4 xl:grid-rows-2 md:grid-cols-2 md:grid-rows-4 grid-cols-1 grid-rows-5 gap-4">
+            <Cards className="md:col-span-2 bg-neutral-900 border border-neutral-800"/>
+            <Cards className="xl:col-start-1 row-start-2 bg-neutral-900 border border-neutral-800" />
+            <Cards className="xl:col-start-2 md:row-start-2 row-start-3 bg-neutral-900 border border-neutral-800" />
+            <CardCharts className="xl:col-start-3 xl:row-start-1 md:col-span-2 row-span-2  bg-neutral-900 border border-neutral-800" />
+        </div>
+
+          <div className="bg-gray-700 h-[450px]" />
         </div>
       </SidebarInset>
     </SidebarProvider>

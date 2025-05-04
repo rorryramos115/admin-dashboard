@@ -17,7 +17,7 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
   useSidebar,
-} from "./ui/sidebar"
+} from "@/components/ui/sidebar"
 
 export function TeamSwitcher({ teams }) {
   const { isMobile } = useSidebar()
