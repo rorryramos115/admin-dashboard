@@ -39,23 +39,23 @@ export const data = {
     navMain: [
       {
         title: "Dashboard",
-        url: "#",
+        url: "/",
         icon: SquareTerminal,
         isActive: true,
-        items: [
-          {
-            title: "History",
-            url: "#",
-          },
-          {
-            title: "Starred",
-            url: "#",
-          },
-          {
-            title: "Settings",
-            url: "#",
-          },
-        ],
+        // items: [
+        //   {
+        //     title: "History",
+        //     url: "#",
+        //   },
+        //   {
+        //     title: "Starred",
+        //     url: "#",
+        //   },
+        //   {
+        //     title: "Settings",
+        //     url: "#",
+        //   },
+        // ],
       },
       {
         title: "Products",
@@ -63,16 +63,16 @@ export const data = {
         icon: Bot,
         items: [
           {
-            title: "Genesis",
+            title: "manage products",
+            url: "manage-products",
+          },
+          {
+            title: "Add Products",
             url: "#",
           },
           {
-            title: "Explorer",
-            url: "#",
-          },
-          {
-            title: "Quantum",
-            url: "#",
+            title: "View Products",
+            url: "view-products",
           },
         ],
       },
@@ -82,12 +82,12 @@ export const data = {
         icon: BookOpen,
         items: [
           {
-            title: "Introduction",
-            url: "#",
+            title: "Manage Inventory",
+            url: "manage-inventory",
           },
           {
-            title: "Get Started",
-            url: "#",
+            title: "View Inventory",
+            url: "view-inventory",
           },
           {
             title: "Tutorials",
