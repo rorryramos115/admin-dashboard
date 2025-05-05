@@ -76,7 +76,8 @@ import {
   TabsContent,
 } from "@/components/ui/tabs"
 
-import { TableCellViewer } from "./table-form";
+import { TableCellViewer } from "./edit-table-form";
+import { AddTableCellViewer } from "./add-table-form";
 
 export const schema = z.object({
   id: z.number(),
@@ -335,10 +336,7 @@ export function DataTable({data: initialData}) {
                 })}
             </DropdownMenuContent>
           </DropdownMenu>
-          <Button variant="outline" size="sm">
-            <PlusIcon />
-            <span className="hidden lg:inline">Add Section</span>
-          </Button>
+          <AddTableCellViewer />
         </div>
       </div>
 

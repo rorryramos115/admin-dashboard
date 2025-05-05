@@ -1,5 +1,6 @@
 import {
     AudioWaveform,
+    BadgeDollarSign,
     BookOpen,
     Bot,
     Command,
@@ -7,8 +8,8 @@ import {
     GalleryVerticalEnd,
     Map,
     PieChart,
-    Settings2,
     SquareTerminal,
+    Users,
   } from "lucide-react"
 
 
@@ -42,28 +43,14 @@ export const data = {
         url: "/",
         icon: SquareTerminal,
         isActive: true,
-        // items: [
-        //   {
-        //     title: "History",
-        //     url: "#",
-        //   },
-        //   {
-        //     title: "Starred",
-        //     url: "#",
-        //   },
-        //   {
-        //     title: "Settings",
-        //     url: "#",
-        //   },
-        // ],
       },
       {
-        title: "Products",
+        title: "Products Management",
         url: "#",
         icon: Bot,
         items: [
           {
-            title: "manage products",
+            title: "Products List",
             url: "manage-products",
           },
           {
@@ -77,47 +64,54 @@ export const data = {
         ],
       },
       {
-        title: "Inventory",
+        title: "Orders Management",
         url: "#",
         icon: BookOpen,
         items: [
           {
-            title: "Manage Inventory",
+            title: "All Orders",
             url: "manage-inventory",
           },
           {
-            title: "View Inventory",
+            title: "Returns/Refunds ",
             url: "view-inventory",
           },
           {
-            title: "Tutorials",
-            url: "#",
-          },
-          {
-            title: "Changelog",
+            title: "Order Status",
             url: "#",
           },
         ],
       },
       {
-        title: "Settings",
+        title: "Sales & Reports",
         url: "#",
-        icon: Settings2,
+        icon: BadgeDollarSign,
         items: [
           {
-            title: "General",
+            title: "Sales Reports",
+            url: "manage-inventory",
+          },
+          {
+            title: "Tax Reports",
+            url: "view-inventory",
+          },
+          {
+            title: "Coupons & Discounts",
+            url: "#",
+          },
+        ],
+      },
+      {
+        title: "Customers Management",
+        url: "#",
+        icon: Users,
+        items: [
+          {
+            title: "Customer List",
             url: "#",
           },
           {
-            title: "Team",
-            url: "#",
-          },
-          {
-            title: "Billing",
-            url: "#",
-          },
-          {
-            title: "Limits",
+            title: "Customer Feedback ",
             url: "#",
           },
         ],

@@ -3,7 +3,7 @@
 import * as React from "react"
 
 import { NavMain } from "@/components/nav-main"
-import { NavProjects } from "@/components/nav-projects"
+// import { NavProjects } from "@/components/nav-projects"
 import { NavUser } from "@/components/nav-user"
 import { TeamSwitcher } from "@/components/team-switcher"
 import { data } from "@/api/sample-data"
@@ -23,7 +23,7 @@ export function AppSidebar({ ...props }) {
       </SidebarHeader>
       <SidebarContent>
         <NavMain items={data.navMain} />
-        <NavProjects projects={data.projects} />
+        {/* <NavProjects projects={data.projects} /> */}
       </SidebarContent>
       <SidebarFooter>
         <NavUser user={data.user} />
