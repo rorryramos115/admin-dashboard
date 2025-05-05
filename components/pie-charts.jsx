@@ -3,18 +3,16 @@
 import * as React from "react"
 import { Label, Pie, PieChart, Sector } from "recharts"
 import { TrendingUp } from "lucide-react"
-// import { PieSectorDataItem } from "recharts/types/polar/Pie"
 
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
-  CardFooter,
   CardTitle,
+  CardFooter,
 } from "@/components/ui/card"
 import {
-  ChartConfig,
   ChartContainer,
   ChartStyle,
   ChartTooltip,
@@ -45,7 +43,7 @@ const chartConfig = {
   mobile: {
     label: "Mobile",
   },
-  january: {
+   january: {
     label: "January",
     color: "#e5e5e5",
   },
@@ -121,11 +119,11 @@ export function PieChartsCard() {
           </SelectContent>
         </Select>
       </CardHeader>
-      <CardContent className="flex flex-1 justify-center pb-0 max-h-[250px]">
+      <CardContent className="flex flex-1 justify-center pb-0  max-h-[250px]">
         <ChartContainer
           id={id}
           config={chartConfig}
-          className="mx-auto aspect-square"
+          className="mx-auto aspect-square w-full max-w-[300px]"
         >
           <PieChart>
             <ChartTooltip
@@ -186,14 +184,16 @@ export function PieChartsCard() {
           </PieChart>
         </ChartContainer>
       </CardContent>
+
       <CardFooter className="flex-col gap-2 text-sm">
         <div className="flex items-center gap-2 font-medium leading-none">
-          Trending up by 5.2% this month <TrendingUp className="h-4 w-4" />
+           Trending up by 5.2% this month <TrendingUp className="h-4 w-4" />
         </div>
         <div className="leading-none text-muted-foreground">
-          Showing total visitors for the last 6 months
+         Showing total visitors for the last 6 months
         </div>
       </CardFooter>
     </Card>
   )
 }
+
