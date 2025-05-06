@@ -59,7 +59,7 @@ export  function TableCellViewer({ item }) {
             {item.header}
           </Button>
         </SheetTrigger>
-        <SheetContent side="right" className="flex flex-col p-8">
+        <SheetContent side="right" className="flex flex-col">
           <SheetHeader className="gap-1">
             <SheetTitle>{item.header}</SheetTitle>
             <SheetDescription>
@@ -124,7 +124,7 @@ export  function TableCellViewer({ item }) {
                 <Separator />
               </>
             )}
-            <form className="flex flex-col gap-4 px-8">
+            <form className="flex flex-col gap-4 px-4">
               <div className="flex flex-col gap-3">
                 <Label htmlFor="header">Header</Label>
                 <Input id="header" defaultValue={item.header} />

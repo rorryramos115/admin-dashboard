@@ -5,7 +5,7 @@ import { TableDemo } from "@/components/tables"
 import { PieChartsCard } from "@/components/pie-charts"
 
 
-export default function page(){
+export default function Dashbaord(){
 
   return (
     <div className="flex flex-1 flex-col gap-4 p-4 pt-0">

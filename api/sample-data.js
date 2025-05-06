@@ -40,7 +40,7 @@ export const data = {
     navMain: [
       {
         title: "Dashboard",
-        url: "/",
+        url: "/dashboard",
         icon: SquareTerminal,
         isActive: true,
       },
@@ -51,7 +51,7 @@ export const data = {
         items: [
           {
             title: "Products List",
-            url: "manage-products",
+            url: "products-list",
           },
           {
             title: "Add Products",

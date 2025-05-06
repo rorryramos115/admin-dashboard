@@ -30,12 +30,12 @@ export  function AddTableCellViewer() {
                 <span className="hidden lg:inline">Add Product</span>
             </Button>
         </SheetTrigger>
-        <SheetContent side="right" className="flex flex-col p-8">
+        <SheetContent side="right" className="flex flex-col">
           <SheetHeader className="gap-1">
             <SheetTitle>Add Products</SheetTitle>
           </SheetHeader>
           <div className="flex flex-1 flex-col gap-4 overflow-y-auto py-4 text-sm">
-            <form className="flex flex-col gap-4 px-8">
+            <form className="flex flex-col gap-4 px-4">
               <div className="flex flex-col gap-3">
                 <Label htmlFor="header">Header</Label>
                 <Input id="header" defaultValue="" />
