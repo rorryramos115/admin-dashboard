@@ -10,6 +10,9 @@ import {
     PieChart,
     SquareTerminal,
     Users,
+    HelpCircleIcon,
+    SearchIcon,
+    SettingsIcon,
   } from "lucide-react"
 
 
@@ -70,15 +73,15 @@ export const data = {
         items: [
           {
             title: "All Orders",
-            url: "manage-inventory",
+            url: "all-orders",
           },
           {
             title: "Returns/Refunds ",
-            url: "view-inventory",
+            url: "#",
           },
           {
             title: "Order Status",
-            url: "#",
+            url: "order-status",
           },
         ],
       },
@@ -89,11 +92,11 @@ export const data = {
         items: [
           {
             title: "Sales Reports",
-            url: "manage-inventory",
+            url: "#",
           },
           {
             title: "Tax Reports",
-            url: "view-inventory",
+            url: "#",
           },
           {
             title: "Coupons & Discounts",
@@ -115,6 +118,23 @@ export const data = {
             url: "#",
           },
         ],
+      },
+    ],
+    navSecondary: [
+      {
+        title: "Settings",
+        url: "settings",
+        icon: SettingsIcon,
+      },
+      {
+        title: "Get Help",
+        url: "#",
+        icon: HelpCircleIcon,
+      },
+      {
+        title: "Search",
+        url: "#",
+        icon: SearchIcon,
       },
     ],
     projects: [

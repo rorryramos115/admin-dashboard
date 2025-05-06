@@ -22,7 +22,7 @@ export default function Dashbaord(){
             <PieChartsCard className="xl:row-start-1 row-start-2 bg-gray-700" />
           </div>
 
-          <div className="bg-neutral-900 p-8 rounded-md border border-neutral-800">
+          <div className="bg-neutral-900 md:p-8 p-4 rounded-md border border-neutral-800">
             <TableDemo />
           </div>
 
